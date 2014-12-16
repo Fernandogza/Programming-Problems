@@ -5,8 +5,12 @@
 #include <math.h>
 using namespace std;
 
+#include <iostream>
+#include <math.h>
+using namespace std;
+
 int main () {
-  int n, m, a;
+  long long n, m, a;
   cin >> n >> m >> a;
-  cout << ceil(n/a) * ceil(m/a) << endl;
+  cout << (n/a+((n%a)?1:0))*(m/a+((m%a)?1:0)) << endl;
 }
